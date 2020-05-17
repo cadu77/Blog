@@ -12,3 +12,9 @@
     {% endif %}
 {% endfor %}
 </ul>
+
+    {% for post in posts %}
+        <h2>{{post.title}}</h2>
+        <h2>{{post.sub_title}}</h2>
+        <p>{{post.content}}</p>
+    {% endfor %}
