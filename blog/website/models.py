@@ -15,8 +15,8 @@ class Post(models.Model):
         choices=Categorias.choices,
         default=Categorias.GR,
     )
-    
-
     def __str__(self):
         return self.title
     
+    def get_categoty_label(self):
+        return self.get_categories_display()
